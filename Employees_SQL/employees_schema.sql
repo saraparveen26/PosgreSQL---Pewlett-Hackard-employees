@@ -1,3 +1,6 @@
+--DATA ENGINEERING
+
+
 -- Drop Tables if already exist in the database
 DROP TABLE IF EXISTS Salaries;
 DROP TABLE IF EXISTS Dept_Employees;
