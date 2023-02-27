@@ -1,19 +1,34 @@
 -- DATA ANALYSIS
 
+
 -- Question 1
 -- List the employee number, last name, first name, sex, and salary of each employee.
-
+-- Note: Data is sorted by employee number for better review.
+SELECT e.employee_no, e.last_name, e.first_name, e.gender, s.salary
+FROM Employees as e
+INNER JOIN Salaries as s
+ON e.employee_no = s.employee_no
+ORDER BY e.employee_no;
 
 
 -- Question 2
 -- List the first name, last name, and hire date for the employees who were hired in 1986.
-
+-- Note: Data is sorted by hire date for better review.
+SELECT first_name, last_name, hire_date
+FROM Employees
+WHERE hire_date BETWEEN '1986-01-01' AND '1986-12-31'
+ORDER BY hire_date ASC;
 
 
 -- Question 3
 -- List the manager of each department along with their department number, 
 -- department name, employee number, last name, and first name.
-
+SELECT d.dept_no, d.dept_name, dm.employee_no, e.last_name, e.first_name
+FROM Departments as d
+INNER JOIN Dept_Managers as dm
+ON d.dept_no = dm.dept_no
+INNER JOIN Employees as e
+ON dm.employee_no = e.employee_no;
 
 
 -- Question 4
