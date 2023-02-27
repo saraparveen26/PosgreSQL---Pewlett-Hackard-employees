@@ -34,13 +34,22 @@ ON dm.employee_no = e.employee_no;
 -- Question 4
 -- List the department number for each employee along with that employee’s 
 -- employee number, last name, first name, and department name.
-
+SELECT de.dept_no, de.employee_no, e.last_name, e.first_name, d.dept_name
+FROM Dept_Employees as de
+INNER JOIN Employees as e
+ON de.employee_no = e.employee_no
+INNER JOIN Departments as d
+ON de.dept_no = d.dept_no;
 
 
 -- Question 5
 -- List first name, last name, and sex of each employee whose first name is Hercules 
 -- and whose last name begins with the letter B.
-
+SELECT first_name, last_name, gender
+FROM Employees
+WHERE
+	first_name = 'Hercules'
+	AND last_name LIKE 'B%';
 
 
 -- Question 6
