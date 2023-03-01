@@ -12,6 +12,7 @@ The first task involves inspecting the CSV files, and then sketching an Entity R
 
 ![alt text](Employees_SQL/ERD/Employees_ERD_png.png)
 
+
 ## Data Engineering
 
 The second task is to use the provided information to create a table schema for each of the six CSV files and import each CSV into the correspoinding SQL table. This task is completed in the SQL file named employees_schema within Employees_SQL folder. 
@@ -22,3 +23,33 @@ Six tables are created named Titles, Employees, Departments, Dept_Employees, Dep
 
 Data from the six CVSs is then imported into the tables created in the same order because of the relationships. Data for each table is then displayed to confirm that it is imported properly.
 
+
+## Data Analysis
+
+The third task is to analyze the data tables to answer eight questions. This analysis is completed in the SQL file named employees_queries within Employees_SQL folder. The screenshots for each analysis result are saved in the folder Data_Analysis_Images.
+
+### *Question 1:*
+
+List the employee number, last name, first name, sex, and salary of each employee.
+I have sorted the data by employee number for better review.
+
+![alt text](Employees_SQL/Data_Analysis_Images/Question_1.PNG)
+
+### *Question 2:*
+
+List the first name, last name, and hire date for the employees who were hired in 1986.
+I have sorted the data by hire date in ascending order for better review.
+
+![alt text](Employees_SQL/Data_Analysis_Images/Question_2.PNG)
+
+### *Question 3:*
+
+List the manager of each department along with their department number, department name, employee number, last name, and first name.
+
+![alt text](Employees_SQL/Data_Analysis_Images/Question_3.PNG)
+
+### *Question 4:*
+
+List the department number for each employee along with that employee’s employee number, last name, first name, and department name.
+
+![alt text](Employees_SQL/Data_Analysis_Images/Question_4.PNG)
