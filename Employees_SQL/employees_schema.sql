@@ -2,12 +2,12 @@
 
 
 -- Drop Tables if already exist in the database
-DROP TABLE IF EXISTS Salaries;
+DROP TABLE IF EXISTS Titles;
+DROP TABLE IF EXISTS Employees;
+DROP TABLE IF EXISTS Departments;
 DROP TABLE IF EXISTS Dept_Employees;
 DROP TABLE IF EXISTS Dept_Managers;
-DROP TABLE IF EXISTS Departments;
-DROP TABLE IF EXISTS Employees;
-DROP TABLE IF EXISTS Titles;
+DROP TABLE IF EXISTS Salaries;
 
 
 -- Change 'date' format to MDY for the database I am using: 'employees_db'
