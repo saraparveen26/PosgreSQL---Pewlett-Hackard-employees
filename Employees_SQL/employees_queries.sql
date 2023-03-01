@@ -87,3 +87,5 @@ SELECT last_name, COUNT(last_name) AS "Last Name Counts"
 	FROM Employees
 GROUP BY last_name
 ORDER BY "Last Name Counts" DESC;
+
+--------------------------------------------------------------------------------------

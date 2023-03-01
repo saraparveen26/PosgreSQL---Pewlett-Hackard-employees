@@ -1,1 +1,1 @@
-# SQL-Challenge
+# Data Modeling, Data Engineering and Data Analysis using SQL (PostgreSQL)
